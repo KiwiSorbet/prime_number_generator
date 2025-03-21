@@ -1,0 +1,23 @@
+# object files
+*.o
+
+# static libraries
+*.lib
+*.a
+
+# dynamic libraries
+*.dll
+*.so
+
+# binaries
+*.exe
+*.out
+primegen
+
+# other project files
+primes.txt
+
+# code editor files
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
