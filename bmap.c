@@ -47,8 +47,8 @@ void bmap_extend(struct bmap* bmap, size_t extend_length, bool init) {
     bmap->length = new_length;
 
     // Set all newly allocated bits to chose
-    memset(bmap->map + old_length / CHUNK_SIZE_BITS, (init) ? 0b11111111 : 0b00000000,
-           (new_length - old_length) / 8);
+    memset(bmap->map + old_length / CHUNK_SIZE_BITS,
+           (init) ? 0b11111111 : 0b00000000, (new_length - old_length) / 8);
 }
 
 void bmap_free(struct bmap* bmap) {
