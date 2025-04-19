@@ -114,7 +114,8 @@ void parse_arguments(int argc, char* argv[]) {
             write_values = true;
         }
         // Check for --num (number of prime numbers to be generated)
-        else if (strcmp(argv[i], "--num") == 0) {
+        else if (strcmp(argv[i], "--num") == 0
+                 || strcmp(argv[i], "-n") == 0) {
             // Check for missing value after argument
             if (i + 1 >= (size_t) argc) {
                 printf("Missing value after argument \"--num\".\n");
