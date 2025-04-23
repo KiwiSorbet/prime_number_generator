@@ -138,5 +138,4 @@ void bmap_print(const struct bmap* bmap) {
     }
 
     printf("------------------------\n");
-    return;
 }
