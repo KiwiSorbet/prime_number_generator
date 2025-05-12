@@ -109,34 +109,45 @@ void parse_arguments(int argc, char* argv[]) {
 
     // Parse individual arguments
     for (size_t i = 1; i < (size_t) argc; i++) {
-        // Check for --write (writing prime numbers to a file)
-        if (strcmp(argv[i], "--write") == 0) {
-            write_values = true;
-        }
-        // Check for --num (number of prime numbers to be generated)
-        else if (strcmp(argv[i], "--num") == 0 || strcmp(argv[i], "-n") == 0) {
+        // Check for "--num" and "-n" (number of prime numbers to be generated)
+        if (strcmp(argv[i], "--num") == 0 || strcmp(argv[i], "-n") == 0) {
             // Check for missing value after argument
             if (i + 1 >= (size_t) argc) {
                 printf("Missing value after argument \"--num\".\n");
                 exit(-1);
             }
 
-            // Check that the value fed is a positive integer
-            bool value_is_valid = true;
-            for (size_t j = 0; j < strlen(argv[i + 1]); j++) {
-                if (argv[i + 1][j] < '0' || argv[i + 1][j] > '9') {
+            // Check that the value fed is a valid positive integer
+            char* arg_num = argv[i + 1];
+            for (size_t j = 0; j < strlen(arg_num); j++) {
+                if (arg_num[j] < '0' || arg_num[j] > '9') {
                     printf("Invalid value for argument \"--num\". Value must "
-                           "be a positive integer.\n");
-                    value_is_valid = false;
+                           "be a valid positive integer.\n");
                     exit(-1);
                 }
             }
 
+            // Check that the value fed is not 0
+            size_t num;
+            sscanf(arg_num, "%zu", &num);
+            if (num == 0) {
+                printf("Invalid value for argument \"--num\". Value must "
+                       "be bigger than 0.\n");
+                exit(-1);
+            }
+
             // Edit the prime list size with the value fed
-            if (value_is_valid)
-                sscanf(argv[i + 1], "%zu", &list_size);
+            sscanf(arg_num, "%zu", &list_size);
             i++; // Increment i to jump 2 tokens in the argument list
         }
+
+        // Check for "--write" and "-w" (writing prime numbers to a file)
+        else if (strcmp(argv[i], "--write") == 0
+                 || strcmp(argv[i], "-w") == 0) {
+            write_values = true;
+        }
+
+        // Unrecognized argument
         else {
             printf("Unrecognized argument: \"%s\"\n", argv[i]);
             exit(-1);
