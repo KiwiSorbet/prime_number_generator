@@ -9,7 +9,7 @@ LDFLAGS =
 DBFLAGS = -Og -g
 RLFLAGS = -O3 -march=native -mtune=native -DNDEBUG
 
-FILES = main.c bmap.c
+FILES = main.c primegen.c bmap.c
 TARGET = primegen
 
 debug:
