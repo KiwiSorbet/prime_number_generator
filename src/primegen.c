@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
-#include "bmap.h"
-#include "primegen.h"
+#include "../include/bmap.h"
+#include "../include/primegen.h"
 
 // Converts a number into its position in a 2-case map.
 static size_t num_to_pos(size_t num);

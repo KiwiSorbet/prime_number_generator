@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "bmap.h"
+#include "../include/bmap.h"
 
 struct bmap* bmap_create(size_t length_bits, bool init) {
     // Allocate memory for bitmap struct

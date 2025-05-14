@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "main.h"
-#include "primegen.h"
+#include "../include/main.h"
+#include "../include/primegen.h"
 
 #define DEFAULT_LIST_SIZE 1000000 // Default size of prime number list
 
