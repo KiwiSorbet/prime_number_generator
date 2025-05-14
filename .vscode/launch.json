@@ -7,7 +7,7 @@
             "program": "${workspaceFolder}/primegen",
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build debug",
-            "postDebugTask": "Clean",
+            "postDebugTask": "Clean"
         },
         {
             "name": "GDB Debug",
@@ -33,6 +33,13 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Live Server",
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
