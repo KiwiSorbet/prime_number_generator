@@ -38,7 +38,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Live Server",
-            "url": "http://localhost:5000",
+            "url": "http://localhost:5001",
             "webRoot": "${workspaceFolder}"
         }
     ]

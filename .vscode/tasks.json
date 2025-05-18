@@ -3,8 +3,8 @@
     "tasks": [
         {
             "label": "Build debug",
-            "command": "make debug",
             "type": "shell",
+            "command": "make debug",
             "presentation": {
                 "revealProblems": "onProblem",
                 "close": true
@@ -13,8 +13,8 @@
         },
         {
             "label": "Build release",
-            "command": "make release",
             "type": "shell",
+            "command": "make release",
             "presentation": {
                 "revealProblems": "onProblem",
                 "close": true
@@ -23,8 +23,8 @@
         },
         {
             "label": "Clean",
-            "command": "make clean",
             "type": "shell",
+            "command": "make clean",
             "presentation": {
                 "revealProblems": "onProblem",
                 "close": true
