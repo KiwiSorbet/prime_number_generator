@@ -12,8 +12,8 @@ FILES = src/*.c
 TARGET = primegen
 
 FILES_WASM = src/primegen.c src/bmap.c
-TARGET_WASM_JS = build-wasm/primegen.js
-TARGET_WASM_FILE = build-wasm/primegen.wasm
+TARGET_WASM_JS = web-client/primegen.js
+TARGET_WASM_FILE = web-client/primegen.wasm
 
 debug:
 	@make clean
