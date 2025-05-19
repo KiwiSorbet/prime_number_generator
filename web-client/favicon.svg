@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Outer skin -->
+  <circle cx="32" cy="32" r="30" fill="#8B5E3C"/>
+  <!-- Inner flesh -->
+  <circle cx="32" cy="32" r="26" fill="#66CC33"/>
+  <!-- Central core -->
+  <circle cx="32" cy="32" r="6" fill="#FFFFFF"/>
+  <!-- Seeds evenly distributed, at 18px radius -->
+  <g fill="#000000">
+    <g transform="rotate(0 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(36 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(72 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(108 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(144 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(180 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(216 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(252 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(288 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(324 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+  </g>
+</svg>
