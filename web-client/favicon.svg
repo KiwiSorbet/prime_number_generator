@@ -1,21 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
   <!-- Outer skin -->
-  <circle cx="32" cy="32" r="30" fill="#8B5E3C"/>
+  <circle cx="32" cy="32" r="30" fill="#8B5E3C"></circle>
   <!-- Inner flesh -->
-  <circle cx="32" cy="32" r="26" fill="#66CC33"/>
+  <circle cx="32" cy="32" r="26" fill="#66CC33"></circle>
   <!-- Central core -->
-  <circle cx="32" cy="32" r="6" fill="#FFFFFF"/>
+  <circle cx="32" cy="32" r="6" fill="#FFFFFF"></circle>
   <!-- Seeds evenly distributed, at 18px radius -->
   <g fill="#000000">
-    <g transform="rotate(0 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(36 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(72 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(108 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(144 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(180 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(216 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(252 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(288 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
-    <g transform="rotate(324 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"/></g>
+    <g transform="rotate(0 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(36 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(72 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(108 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(144 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(180 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(216 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(252 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(288 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
+    <g transform="rotate(324 32 32)"><ellipse cx="32" cy="14" rx="1.5" ry="5"></ellipse></g>
   </g>
-</svg>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
